@@ -1,0 +1,48 @@
+body {
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.table-responsive {
+  margin: 0 auto;
+  max-width: 1000px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.contenedor {
+  display: flex;
+}
+
+.pad{
+  font-size: 48px;
+}
+.caja {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.numero-neon {
+  font-size: 48px;
+  color: #15ff00;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+.numero-neon2 {
+  font-size: 48px;
+  color: red;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+.numero-neon3 {
+  font-size: 48px;
+  color: #eeff02;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}

@@ -1,0 +1,101 @@
+.danger {
+    background-color: rgba(255, 0, 0, 0.658);
+  }
+  
+ 
+  .table-responsive {
+    margin: 0 auto;
+    max-width: 800px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  label {
+    width: 100px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  .danger {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .form-check-label {
+    margin-left: 10px;
+    font-weight: normal;
+  }
+  /* Estilos para el div con el formulario */
+.form-container {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Estilos para el input de búsqueda */
+.search-input {
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  #agregar-cuenta {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  #agregar-cuenta .dropdown-menu {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+  
