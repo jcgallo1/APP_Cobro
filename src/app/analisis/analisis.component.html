@@ -1,41 +1,73 @@
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="">Logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="/analisis">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="/cuentas">ir a cuentas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="/ConfCuentas">Pasar cuentas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="/semanal">Semanales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="/vencidas">Cuentas vencidas </a>
+                            </li>
+                        </ul>
+                    </div>
 
-            
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <h2>Resumen</h2>
-                <div class="progress"  style="height:40px">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" [style.width.%]="saldo">
-                      abonado: {{saldo}}
-                    </div>
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" [style.width.%]="cobro">
-                        de {{cobro}}
-                      </div>
-                    
-                  </div>
-                <br>
-                
-               <div class="container-fluid">
-                <div class="contenedor">
-                    <div class="caja table-responsive pad">
-                        <div >{{cobro}}</div>
-                        <h3>BASE</h3>
-                    </div>
-                    
-                    <div class="caja table-responsive pad">
-                        <div >{{cobro +((cobro*20)/100)}}</div>
-                        <h3>COBRO</h3>
-                    </div>
-                    <div class="caja table-responsive pad">
-                        <div >{{((cobro*20)/100)}}</div>
-                        <h3>GANANCIAS</h3>
-                    </div>
                 </div>
-            <br>
+            </nav>
 
 
-            </div>
+
+
+            <div class="d-flex flex-column">
+                <h2>Resumen</h2>
+                <div class="progress" style="height:40px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                        [style.width.%]="saldo">
+                        abonado: {{saldo}}
+                    </div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                        [style.width.%]="cobro">
+                        de {{cobro}}
+                    </div>
+
+                </div>
+                <br>
+
+                <div class="container-fluid ">
+                    <div class="contenedor2">
+                        <div class="caja table-responsive pad">
+                            <div>{{cobro}}</div>
+                            <h3>BASE</h3>
+                        </div>
+
+                        <div class="caja table-responsive pad">
+                            <div>{{cobro +((cobro*20)/100)}}</div>
+                            <h3>COBRO</h3>
+                        </div>
+                        <div class="caja table-responsive pad">
+                            <div>{{((cobro*20)/100)}}</div>
+                            <h3>GANANCIAS</h3>
+                        </div>
+                    </div>
+                    <br>
+
+
+                </div>
                 <div class="container-fluid table-responsive">
                     <h3>cuentas</h3>
                     <div class="contenedor">
@@ -59,8 +91,8 @@
                 </div>
                 <br>
                 <div>
-                   
-                    <div class="table-responsive"> 
+
+                    <div class="table-responsive">
                         <h3>SEMANALES :<span> {{cuentasSemanales[0].semanal}} </span></h3>
                         <table class="table table-bordered table-hover">
                             <thead>
@@ -86,8 +118,8 @@
                 </div>
                 <br>
                 <div>
-                   
-                    <div class="table-responsive"> 
+
+                    <div class="table-responsive">
                         <h3>VENCIDAS HOY</h3>
                         <table class="table table-bordered table-hover">
                             <thead>
@@ -107,17 +139,9 @@
                         </table>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
-        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
-        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
-        crossorigin="anonymous"></script>
+    
 
 </body>

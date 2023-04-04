@@ -21,6 +21,17 @@ h2 {
 .contenedor {
   display: flex;
 }
+.contenedor2{
+  display:flex
+}
+@media screen and (max-width: 768px) {
+  .contenedor{
+    flex-wrap: wrap; 
+  }
+  .contenedor2{
+    flex-direction: column;
+  }
+}
 
 .pad{
   font-size: 48px;

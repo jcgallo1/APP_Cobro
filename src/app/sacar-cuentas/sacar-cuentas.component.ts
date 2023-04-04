@@ -28,6 +28,15 @@ export class SacarCuentasComponent {
     
     return cuenta.vencida;
   }
+  debeMostrarBotones(cuenta: Cuenta): boolean {
+    if (cuenta.saldo > 0) {
+      return false;
+    }
+    if (cuenta.saldo === 0 && cuenta.pago > 0) {
+      return false;
+    }
+    return true;
+  }
   enviarPago(cuenta: Cuenta) {
     let respaldo=cuenta.nuevoAtributo;
     

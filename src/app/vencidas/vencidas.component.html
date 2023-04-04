@@ -1,8 +1,36 @@
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                
+        <div class="flex flex-column">
+            
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/analisis">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/cuentas">ir a cuentas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/ConfCuentas">Pasar cuentas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/semanal">Semanales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/vencidas">Cuentas vencidas </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
                 <h2>Cuentas Vencidas</h2>
                 
                   
@@ -26,7 +54,7 @@
                         </tbody>
                       </table>
                 </div>
-            </main>
+            
             
         </div>
     </div>

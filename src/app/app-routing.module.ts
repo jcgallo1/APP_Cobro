@@ -7,7 +7,7 @@ import { VencidasComponent } from './vencidas/vencidas.component';
 import { AnalisisComponent } from './analisis/analisis.component';
 import { SemanalComponent } from './semanal/semanal.component';
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  {  path: '', redirectTo: 'analisis', pathMatch: 'full'  },
   { path: 'ConfCuentas', component: SacarCuentasComponent },
   { path: 'cuentas', component: CuentasComponent },
   { path: 'vencidas', component: VencidasComponent },

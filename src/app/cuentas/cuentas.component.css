@@ -2,7 +2,12 @@
     background-color: rgba(255, 0, 0, 0.658);
   }
   
- 
+ #add-account-form{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+ }
   .table-responsive {
     margin: 0 auto;
     max-width: 800px;
